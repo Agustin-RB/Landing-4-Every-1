@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Momentum - NFT Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Barra Lateral -->
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="logo disminuido.png" alt="Logo" class="logo-icon">
+        </div>
+        <nav class="sidebar-nav">
+            <button class="nav-btn" id="btn-agregar" title="Agregar">
+                <img src="icono mas.png" alt="Agregar" class="icon-img">
+            </button>
+            <button class="nav-btn" id="btn-ayuda" title="Ayuda">
+                <img src="icono pregunta.png" alt="Ayuda" class="icon-img">
+            </button>
+            <button class="nav-btn" id="btn-buscar" title="Buscar">
+                <img src="icono buscar.png" alt="Buscar" class="icon-img">
+            </button>
+            <button class="nav-btn" id="btn-galeria" title="Galería">
+                <img src="icono galeria.png" alt="Galería" class="icon-img">
+            </button>
+            <button class="nav-btn" id="btn-darkmode" title="Dark Mode">
+                <img src="icono darkwhite.png" alt="Dark Mode" class="icon-img">
+            </button>
+        </nav>
+        <div class="sidebar-footer">
+            <button class="nav-btn" title="Perfil">
+                <img src="icono persona.png" alt="Perfil" class="icon-img icon-persona">
+            </button>
+        </div>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Header Banner -->
+        <header class="hero-banner">
+            <button class="nav-arrow nav-arrow-left">
+                <img src="flecha de banner home.png" alt="Anterior" class="arrow-img arrow-img-left">
+            </button>
+            <div class="hero-content">
+                <h1 class="hero-title">THE MOMENTUM</h1>
+                <p class="hero-subtitle">BY SKY54</p>
+                <div class="hero-image">
+                    <div class="cube-3d"></div>
+                </div>
+            </div>
+            <button class="nav-arrow nav-arrow-right">
+                <img src="flecha de banner home.png" alt="Siguiente" class="arrow-img">
+            </button>
+        </header>
+
+        <!-- Pestañas de Navegación -->
+        <section class="marketplace-tabs">
+            <button class="tab-btn" data-tab="tokens">
+                <span class="tab-text">Tokens</span>
+                <div class="info-icon-wrapper">
+                    <img src="signo admiracion violeta.png" alt="info" class="tab-info-icon">
+                    <div class="info-tooltip">
+                        Un NFT (Non-Fungible Token) es un activo digital único e indivisible, registrado en blockchain
+                        mediante contratos inteligentes. Cada NFT contiene metadatos que certifican la autenticidad,
+                        propiedad y procedencia del contenido asociado, ya sea una imagen, audio o cualquier archivo
+                        digital.
+                    </div>
+                </div>
+            </button>
+            <button class="tab-btn active" data-tab="nfts">
+                <span class="tab-text">NFTs</span>
+                <div class="info-icon-wrapper">
+                    <img src="signo admiracion violeta.png" alt="info" class="tab-info-icon">
+                    <div class="info-tooltip">
+                        Un NFT (Non-Fungible Token) es un activo digital único e indivisible, registrado en blockchain
+                        mediante contratos inteligentes. Cada NFT contiene metadatos que certifican la autenticidad,
+                        propiedad y procedencia del contenido asociado, ya sea una imagen, audio o cualquier archivo
+                        digital.
+                    </div>
+                </div>
+            </button>
+        </section>
+
+        <!-- Sección de Categorías -->
+        <section class="categories">
+            <!-- Trendy Section -->
+            <div class="category-section active">
+                <div class="category-header">
+                    <h2>Trendy
+                        <div class="info-icon-wrapper">
+                            <img src="signo admiracion violeta.png" alt="info" class="info-icon">
+                            <div class="info-tooltip">
+                                Un NFT (Non-Fungible Token) es un activo digital único e indivisible, registrado en
+                                blockchain mediante contratos inteligentes. Cada NFT contiene metadatos que certifican
+                                la autenticidad, propiedad y procedencia delcontenido asociado, ya sea una imagen, audio
+                                o cualquier archivo digital.
+                            </div>
+                        </div>
+                    </h2>
+                </div>
+                <div class="carousel-container">
+                    <button class="carousel-arrow carousel-arrow-left">
+                        <img src="flecha morada.png" alt="Anterior" class="carousel-arrow-img">
+                    </button>
+                    <div class="cards-grid">
+                        <div class="card">
+                            <img src="imagen para trendy1.png" alt="Rose Blossom" class="card-image">
+                            <h3 class="card-title">Rose Blossom</h3>
+                            <p class="card-author">LuciusDelacroix</p>
+                        </div>
+                        <div class="card">
+                            <img src="imagen para trendy 2.png" alt="Simplicity" class="card-image">
+                            <h3 class="card-title">Simplicity</h3>
+                            <p class="card-author">Dinnerbone</p>
+                        </div>
+                        <div class="card">
+                            <img src="imagen para trendy 3.png" alt="Memory in Disguise" class="card-image">
+                            <h3 class="card-title">Memory in Disguise</h3>
+                            <p class="card-author">Alf4756</p>
+                        </div>
+                    </div>
+                    <button class="carousel-arrow carousel-arrow-right">
+                        <img src="flecha morada.png" alt="Siguiente"
+                            class="carousel-arrow-img carousel-arrow-img-right">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Separador -->
+        <hr class="section-divider">
+
+        <!-- Título de la sección -->
+        <h2 class="section-main-title" id="section-title">Encontrá tu proxima pieza</h2>
+
+        <!-- Sección de NFTs -->
+        <section class="search-section" id="nfts-section">
+            <!-- Filtros -->
+            <div class="filters-container">
+                <div class="filter-select-wrapper">
+                    <select class="filter-select">
+                        <option value="" disabled selected>Divisa</option>
+                        <option>ETH</option>
+                        <option>SOL</option>
+                        <option>USDT</option>
+                        <option>BLAST</option>
+                        <option>RONIN</option>
+                    </select>
+                </div>
+
+                <div class="filter-select-wrapper">
+                    <select class="filter-select">
+                        <option value="" disabled selected>Genero</option>
+                        <option>Todos</option>
+                        <option>Arte</option>
+                        <option>Música</option>
+                        <option>Fotografía</option>
+                    </select>
+                </div>
+
+                <div class="filter-select-wrapper">
+                    <select class="filter-select">
+                        <option value="" disabled selected>Activo hasta</option>
+                        <option>Cualquiera</option>
+                        <option>24 horas</option>
+                        <option>7 días</option>
+                        <option>30 días</option>
+                    </select>
+                </div>
+
+                <input type="text" class="filter-input" placeholder="Min">
+
+                <input type="text" class="filter-input" placeholder="Max">
+
+                <button class="filter-advanced">Avanzado</button>
+            </div>
+
+            <!-- Grid de Cards de Búsqueda -->
+            <div class="search-grid">
+                <div class="search-card">
+                    <img src="card encontra1.jpg" alt="Rose Blossom" class="search-card-image">
+                    <div class="search-card-content">
+                        <h3 class="search-card-title">Rose Blossom</h3>
+                        <p class="search-card-author">LuciusDelacroix</p>
+                        <div class="search-card-footer">
+                            <span class="search-card-price">0.003 ETH</span>
+                            <button class="search-card-btn">Pujar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-card">
+                    <img src="card encontra2.jpg" alt="Rose Blossom" class="search-card-image">
+                    <div class="search-card-content">
+                        <h3 class="search-card-title">Rose Blossom</h3>
+                        <p class="search-card-author">LuciusDelacroix</p>
+                        <div class="search-card-footer">
+                            <button class="search-card-btn-secondary">Ofertar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-card">
+                    <img src="card encontra3.jpg" alt="Rose Blossom" class="search-card-image">
+                    <div class="search-card-content">
+                        <h3 class="search-card-title">Rose Blossom</h3>
+                        <p class="search-card-author">LuciusDelacroix</p>
+                        <div class="search-card-footer">
+                            <span class="search-card-price">0.003 ETH</span>
+                            <button class="search-card-btn">Pujar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-card">
+                    <img src="card encontra4.jpg" alt="Rose Blossom" class="search-card-image">
+                    <div class="search-card-content">
+                        <h3 class="search-card-title">Rose Blossom</h3>
+                        <p class="search-card-author">LuciusDelacroix</p>
+                        <div class="search-card-footer">
+                            <button class="search-card-btn-secondary">Ofertar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-card">
+                    <img src="card encontra5.jpg" alt="Rose Blossom" class="search-card-image">
+                    <div class="search-card-content">
+                        <h3 class="search-card-title">Rose Blossom</h3>
+                        <p class="search-card-author">LuciusDelacroix</p>
+                        <div class="search-card-footer">
+                            <span class="search-card-price">0.003 ETH</span>
+                            <button class="search-card-btn">Pujar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Tokens -->
+        <section class="search-section" id="tokens-section" style="display: none;">
+            <!-- Filtros -->
+            <div class="filters-container">
+                <div class="filter-select-wrapper">
+                    <select class="filter-select">
+                        <option value="" disabled selected>Divisa</option>
+                        <option>ETH</option>
+                        <option>SOL</option>
+                        <option>USDT</option>
+                        <option>BLAST</option>
+                        <option>RONIN</option>
+                    </select>
+                </div>
+
+                <div class="filter-select-wrapper">
+                    <select class="filter-select">
+                        <option value="" disabled selected>Categoría</option>
+                        <option>Todas</option>
+                        <option>Ethereum</option>
+                        <option>Solana</option>
+                        <option>Polygon</option>
+                    </select>
+                </div>
+
+                <input type="text" class="filter-input" placeholder="Min">
+
+                <input type="text" class="filter-input" placeholder="Max">
+            </div>
+
+            <!-- Lista de Tokens -->
+            <div class="tokens-list">
+                <div class="token-card">
+                    <div class="token-icon" style="background: linear-gradient(135deg, #00d4aa 0%, #00a884 100%);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white"
+                                font-family="Arial, sans-serif" font-weight="bold" font-size="12">R</text>
+                        </svg>
+                    </div>
+                    <div class="token-info">
+                        <h3 class="token-name">The Root Network</h3>
+                    </div>
+                    <div class="token-price-section">
+                        <span class="token-price-label">USD:</span>
+                        <span class="token-price-value">0,0026 $</span>
+                    </div>
+                    <div class="token-change positive">
+                        <span class="token-change-label">Cambio en 1 D:</span>
+                        <span class="token-change-value">+72,5 %</span>
+                    </div>
+                    <div class="token-change negative">
+                        <span class="token-change-label">Cambio en 30 D:</span>
+                        <span class="token-change-value">-13,3 %</span>
+                    </div>
+                    <div class="token-chart">
+                        <svg viewBox="0 0 100 30" class="token-chart-svg">
+                            <polyline points="0,25 20,20 40,15 60,18 80,10 100,5" fill="none" stroke="#10b981"
+                                stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="token-card">
+                    <div class="token-icon" style="background: linear-gradient(135deg, #627eea 0%, #4e6bdb 100%);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 3L6 12.5L12 15.5L18 12.5L12 3Z" fill="white" opacity="0.6" />
+                            <path d="M12 16.5L6 13.5L12 21L18 13.5L12 16.5Z" fill="white" />
+                        </svg>
+                    </div>
+                    <div class="token-info">
+                        <h3 class="token-name">Ethereum</h3>
+                    </div>
+                    <div class="token-price-section">
+                        <span class="token-price-label">USD:</span>
+                        <span class="token-price-value">3.245,12 $</span>
+                    </div>
+                    <div class="token-change negative">
+                        <span class="token-change-label">Cambio en 1 D:</span>
+                        <span class="token-change-value">-2,3 %</span>
+                    </div>
+                    <div class="token-change positive">
+                        <span class="token-change-label">Cambio en 30 D:</span>
+                        <span class="token-change-value">+8,5 %</span>
+                    </div>
+                    <div class="token-chart">
+                        <svg viewBox="0 0 100 30" class="token-chart-svg">
+                            <polyline points="0,15 20,10 40,12 60,8 80,20 100,18" fill="none" stroke="#ef4444"
+                                stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="token-card">
+                    <div class="token-icon" style="background: linear-gradient(135deg, #14f195 0%, #9945ff 100%);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10L17 10L15 8L7 8L7 10Z" fill="white" />
+                            <path d="M7 14L17 14L15 12L7 12L7 14Z" fill="white" opacity="0.8" />
+                            <path d="M7 18L17 18L15 16L7 16L7 18Z" fill="white" opacity="0.6" />
+                        </svg>
+                    </div>
+                    <div class="token-info">
+                        <h3 class="token-name">Solana</h3>
+                    </div>
+                    <div class="token-price-section">
+                        <span class="token-price-label">USD:</span>
+                        <span class="token-price-value">98,50 $</span>
+                    </div>
+                    <div class="token-change positive">
+                        <span class="token-change-label">Cambio en 1 D:</span>
+                        <span class="token-change-value">+3,7 %</span>
+                    </div>
+                    <div class="token-change positive">
+                        <span class="token-change-label">Cambio en 30 D:</span>
+                        <span class="token-change-value">+15,2 %</span>
+                    </div>
+                    <div class="token-chart">
+                        <svg viewBox="0 0 100 30" class="token-chart-svg">
+                            <polyline points="0,20 20,18 40,14 60,12 80,8 100,5" fill="none" stroke="#10b981"
+                                stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="token-card">
+                    <div class="token-icon" style="background: linear-gradient(135deg, #26a17b 0%, #1f8a68 100%);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white"
+                                font-family="Arial, sans-serif" font-weight="bold" font-size="11">₮</text>
+                        </svg>
+                    </div>
+                    <div class="token-info">
+                        <h3 class="token-name">Tether</h3>
+                    </div>
+                    <div class="token-price-section">
+                        <span class="token-price-label">USD:</span>
+                        <span class="token-price-value">1,00 $</span>
+                    </div>
+                    <div class="token-change neutral">
+                        <span class="token-change-label">Cambio en 1 D:</span>
+                        <span class="token-change-value">0,0 %</span>
+                    </div>
+                    <div class="token-change neutral">
+                        <span class="token-change-label">Cambio en 30 D:</span>
+                        <span class="token-change-value">+0,1 %</span>
+                    </div>
+                    <div class="token-chart">
+                        <svg viewBox="0 0 100 30" class="token-chart-svg">
+                            <polyline points="0,15 20,15 40,15 60,15 80,15 100,15" fill="none" stroke="#6b7280"
+                                stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="token-card">
+                    <div class="token-icon" style="background: linear-gradient(135deg, #8247e5 0%, #6930c3 100%);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4L6 8L6 16L12 20L18 16L18 8L12 4Z" fill="none" stroke="white"
+                                stroke-width="2" />
+                            <path d="M12 4L12 20M6 8L18 8M6 16L18 16" stroke="white" stroke-width="1" opacity="0.5" />
+                        </svg>
+                    </div>
+                    <div class="token-info">
+                        <h3 class="token-name">Polygon</h3>
+                    </div>
+                    <div class="token-price-section">
+                        <span class="token-price-label">USD:</span>
+                        <span class="token-price-value">0,85 $</span>
+                    </div>
+                    <div class="token-change negative">
+                        <span class="token-change-label">Cambio en 1 D:</span>
+                        <span class="token-change-value">-1,8 %</span>
+                    </div>
+                    <div class="token-change positive">
+                        <span class="token-change-label">Cambio en 30 D:</span>
+                        <span class="token-change-value">+6,3 %</span>
+                    </div>
+                    <div class="token-chart">
+                        <svg viewBox="0 0 100 30" class="token-chart-svg">
+                            <polyline points="0,12 20,15 40,10 60,18 80,14 100,20" fill="none" stroke="#ef4444"
+                                stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Página de Búsqueda -->
+    <main class="search-page" id="search-page" style="display: none;">
+        <div class="search-container">
+            <div class="search-page-header" id="search-page-header">
+                <h1 class="search-page-title">BUSCAR</h1>
+            </div>
+
+            <div class="search-bar-container" id="search-bar-container">
+                <input type="text" class="search-input" id="search-input" placeholder="Encontrá tu proxima pieza">
+
+                <div class="search-filters" id="search-filters">
+                    <div class="filter-select-wrapper">
+                        <select class="filter-select">
+                            <option value="" disabled selected>Divisa</option>
+                            <option>ETH</option>
+                            <option>SOL</option>
+                            <option>USDT</option>
+                            <option>BTC</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-select-wrapper">
+                        <select class="filter-select">
+                            <option value="" disabled selected>Genero</option>
+                            <option>Todos</option>
+                            <option>Arte</option>
+                            <option>Música</option>
+                            <option>Fotografía</option>
+                            <option>Deportes</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-select-wrapper">
+                        <select class="filter-select">
+                            <option value="" disabled selected>Rareza</option>
+                            <option>Común</option>
+                            <option>Poco común</option>
+                            <option>Raro</option>
+                            <option>Épico</option>
+                            <option>Legendario</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search-results-grid" id="search-results" style="display: none;">
+                <div class="search-card">
+                    <img src="card encontra1.jpg" alt="Rose Blossom" class="search-card-image">
+                    <div class="search-card-content">
+                        <h3 class="search-card-title">Rose Blossom</h3>
+                        <p class="search-card-author">LuciusDelacroix</p>
+                        <div class="search-card-footer">
+                            <span class="search-card-price">0.003 ETH</span>
+                            <button class="search-card-btn">Pujar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-card">
+                    <img src="card encontra2.jpg" alt="Rose Blossom" class="search-card-image">
+                    <div class="search-card-content">
+                        <h3 class="search-card-title">Rose Blossom</h3>
+                        <p class="search-card-author">LuciusDelacroix</p>
+                        <div class="search-card-footer">
+                            <span class="search-card-price">0.003 ETH</span>
+                            <button class="search-card-btn">Pujar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-card">
+                    <img src="card encontra3.jpg" alt="Rose Blossom" class="search-card-image">
+                    <div class="search-card-content">
+                        <h3 class="search-card-title">Rose Blossom</h3>
+                        <p class="search-card-author">LuciusDelacroix</p>
+                        <div class="search-card-footer">
+                            <span class="search-card-price">0.003 ETH</span>
+                            <button class="search-card-btn">Pujar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-card">
+                    <img src="card encontra4.jpg" alt="Rose Blossom" class="search-card-image">
+                    <div class="search-card-content">
+                        <h3 class="search-card-title">Rose Blossom</h3>
+                        <p class="search-card-author">LuciusDelacroix</p>
+                        <div class="search-card-footer">
+                            <span class="search-card-price">0.003 ETH</span>
+                            <button class="search-card-btn">Pujar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Página de Selección de Divisa -->
+    <main class="divisa-page" id="divisa-page" style="display: none;">
+        <div class="divisa-page-header">
+            <h1 class="divisa-page-title">ELEGÍ TU DIVISA</h1>
+        </div>
+
+        <div class="divisa-page-content">
+            <div class="divisa-card" data-currency="ETH">
+                <div class="divisa-icon" style="background: linear-gradient(135deg, #627eea 0%, #4e6bdb 100%);">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 8L15 31L30 39L45 31L30 8Z" fill="white" opacity="0.6" />
+                        <path d="M30 41L15 33L30 52L45 33L30 41Z" fill="white" />
+                    </svg>
+                </div>
+                <h3 class="divisa-card-title">Ethereum</h3>
+            </div>
+
+            <div class="divisa-card" data-currency="SOL">
+                <div class="divisa-icon" style="background: linear-gradient(135deg, #14f195 0%, #9945ff 100%);">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 25L43 25L38 20L17 20L17 25Z" fill="white" />
+                        <path d="M17 35L43 35L38 30L17 30L17 35Z" fill="white" opacity="0.8" />
+                        <path d="M17 45L43 45L38 40L17 40L17 45Z" fill="white" opacity="0.6" />
+                    </svg>
+                </div>
+                <h3 class="divisa-card-title">Solana</h3>
+            </div>
+
+            <div class="divisa-card" data-currency="LTC">
+                <div class="divisa-icon" style="background: linear-gradient(135deg, #838383 0%, #5a5a5a 100%);">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white"
+                            font-family="Arial, sans-serif" font-weight="bold" font-size="32">Ł</text>
+                    </svg>
+                </div>
+                <h3 class="divisa-card-title">Lite coin</h3>
+            </div>
+
+            <div class="divisa-card" data-currency="BTC">
+                <div class="divisa-icon" style="background: linear-gradient(135deg, #f7931a 0%, #d47714 100%);">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white"
+                            font-family="Arial, sans-serif" font-weight="bold" font-size="32">₿</text>
+                    </svg>
+                </div>
+                <h3 class="divisa-card-title">Bitcoin</h3>
+            </div>
+
+            <div class="divisa-card" data-currency="ETH2">
+                <div class="divisa-icon" style="background: linear-gradient(135deg, #627eea 0%, #4e6bdb 100%);">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 8L15 31L30 39L45 31L30 8Z" fill="white" opacity="0.6" />
+                        <path d="M30 41L15 33L30 52L45 33L30 41Z" fill="white" />
+                    </svg>
+                </div>
+                <h3 class="divisa-card-title">Ethereum</h3>
+            </div>
+
+            <div class="divisa-card" data-currency="SOL2">
+                <div class="divisa-icon" style="background: linear-gradient(135deg, #14f195 0%, #9945ff 100%);">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 25L43 25L38 20L17 20L17 25Z" fill="white" />
+                        <path d="M17 35L43 35L38 30L17 30L17 35Z" fill="white" opacity="0.8" />
+                        <path d="M17 45L43 45L38 40L17 40L17 45Z" fill="white" opacity="0.6" />
+                    </svg>
+                </div>
+                <h3 class="divisa-card-title">Solana</h3>
+            </div>
+
+            <div class="divisa-card" data-currency="LTC2">
+                <div class="divisa-icon" style="background: linear-gradient(135deg, #838383 0%, #5a5a5a 100%);">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white"
+                            font-family="Arial, sans-serif" font-weight="bold" font-size="32">Ł</text>
+                    </svg>
+                </div>
+                <h3 class="divisa-card-title">Lite coin</h3>
+            </div>
+
+            <div class="divisa-card" data-currency="BTC2">
+                <div class="divisa-icon" style="background: linear-gradient(135deg, #f7931a 0%, #d47714 100%);">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white"
+                            font-family="Arial, sans-serif" font-weight="bold" font-size="32">₿</text>
+                    </svg>
+                </div>
+                <h3 class="divisa-card-title">Bitcoin</h3>
+            </div>
+        </div>
+    </main>
+
+    <!-- Página de Upload -->
+    <main class="upload-page" id="upload-page" style="display: none;">
+        <div class="upload-header">
+            <button class="upload-back-arrow" id="upload-back-arrow">
+                <img src="flecha morada.png" alt="Volver" class="back-arrow-img">
+            </button>
+            <h1 class="upload-title">SUBÍ TU CREACIÓN</h1>
+        </div>
+
+        <div class="upload-container">
+            <div class="upload-left">
+                <div class="upload-drop-zone" id="upload-drop-zone">
+                    <img src="flecha gris.png" alt="Upload" class="upload-arrow-icon">
+                    <p class="upload-text">Arrastrá tu archivo acá</p>
+                </div>
+                <button class="upload-btn" id="upload-btn">Subir archivo</button>
+                <input type="file" id="file-input" accept="image/*" style="display: none;">
+
+                <div class="upload-preview" id="upload-preview" style="display: none;">
+                    <img src="" alt="Preview" class="preview-image" id="preview-image">
+                </div>
+            </div>
+
+            <div class="upload-right">
+                <div class="price-section">
+                    <h3 class="price-title" id="price-title">Precio mínimo de puja</h3>
+                    <div class="price-input-container">
+                        <input type="number" class="price-input" id="price-input" placeholder="0.00" step="0.01"
+                            min="0">
+                        <span class="price-currency" id="price-currency">ETH</span>
+                    </div>
+                </div>
+
+                <div class="price-buttons">
+                    <button class="fixed-price-btn" id="fixed-price-btn">Elegí un precio fijo</button>
+                    <button class="submit-btn" id="submit-btn">Subir</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Página de Galería -->
+    <main class="gallery-page" id="gallery-page" style="display: none;">
+        <div class="gallery-header">
+            <h1 class="gallery-title">GALERÍA</h1>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <img src="imagen para trendy1.png" alt="Rose Blossom" class="gallery-card-image">
+                <div class="gallery-card-content">
+                    <h3 class="gallery-card-title">Rose Blossom</h3>
+                    <p class="gallery-card-author">LuciusDelacroix</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="imagen para trendy 2.png" alt="Simplicity" class="gallery-card-image">
+                <div class="gallery-card-content">
+                    <h3 class="gallery-card-title">Simplicity</h3>
+                    <p class="gallery-card-author">Dinnerbone</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal de Detalle NFT -->
+    <div class="nft-modal-overlay" id="nft-modal" style="display: none;">
+        <div class="nft-modal-content">
+            <button class="nft-modal-close" id="nft-modal-close">&times;</button>
+
+            <div class="nft-modal-grid">
+                <!-- Columna Izquierda: Imagen y Gráfico -->
+                <div class="nft-modal-left">
+                    <img src="imagen para trendy 3.png" alt="NFT" class="nft-modal-image" id="nft-modal-img">
+                    <img src="esquemaa.png" alt="Gráfico de precios" class="nft-price-chart-img">
+                </div>
+
+                <!-- Columna Derecha: Información -->
+                <div class="nft-modal-right">
+                    <h2 class="nft-modal-title" id="nft-modal-title">Memory in Disguise</h2>
+                    <p class="nft-modal-author">By <span id="nft-modal-author">Alf4756</span></p>
+
+                    <!-- Contenedor Superior: Precio y Puja -->
+                    <div class="nft-info-container">
+                        <div class="nft-listing-info">
+                            <span class="listing-label">Listado por</span>
+                            <span class="listing-expire">Expira en 20d, 7h, 9m, 52s</span>
+                        </div>
+
+                        <div class="nft-price-section">
+                            <div class="nft-current-price">
+                                <span class="price-value">0.12 ETH</span>
+                                <span class="price-usd">$438 USD</span>
+                            </div>
+                            <div class="nft-price-details">
+                                <span>Última oferta: 0.43 WEH</span>
+                                <span>Mejor oferta: 0.12 ETH</span>
+                                <span>Piso: 0.01 ETH</span>
+                            </div>
+                        </div>
+
+                        <button class="nft-bid-btn">Hacer una puja</button>
+                    </div>
+
+                    <!-- Contenedor Inferior: Características y Blockchain -->
+                    <div class="nft-details-container">
+                        <div class="nft-characteristics">
+                            <h3>Características <span class="char-count">6</span></h3>
+                            <div class="char-grid">
+                                <div class="char-item">
+                                    <span class="char-label">Arquetipo</span>
+                                    <span class="char-value">Normal</span>
+                                </div>
+                                <div class="char-item">
+                                    <span class="char-label">Genero</span>
+                                    <span class="char-value">Paisaje</span>
+                                </div>
+                                <div class="char-item">
+                                    <span class="char-label">Movimientos</span>
+                                    <span class="char-value">15</span>
+                                </div>
+                                <div class="char-item">
+                                    <span class="char-label">Valor de portfolio</span>
+                                    <span class="char-value">35.43 ETH</span>
+                                </div>
+                                <div class="char-item">
+                                    <span class="char-label">Tipo de activo</span>
+                                    <span class="char-value">Imagen/jpeg</span>
+                                </div>
+                                <div class="char-item">
+                                    <span class="char-label">Especie</span>
+                                    <span class="char-value">Especial</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nft-blockchain">
+                            <h3>Detalles Blockchain</h3>
+                            <div class="blockchain-details">
+                                <div class="blockchain-row">
+                                    <span>Dirección de contrato:</span>
+                                    <a href="#" class="blockchain-link">oXc11c...xB6f</a>
+                                </div>
+                                <div class="blockchain-row">
+                                    <span>ID del token:</span>
+                                    <span class="blockchain-value">25457</span>
+                                </div>
+                                <div class="blockchain-row">
+                                    <span>Standard del token:</span>
+                                    <span class="blockchain-value">ERC721</span>
+                                </div>
+                                <div class="blockchain-row">
+                                    <span>Cadena:</span>
+                                    <span class="blockchain-value">Base</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Token -->
+    <div class="token-modal-overlay" id="token-modal" style="display: none;">
+        <div class="token-modal-content">
+            <button class="token-modal-close" id="token-modal-close">&times;</button>
+
+            <!-- Logo a la izquierda de todo -->
+            <div class="token-logo-container token-logo-main" id="token-logo-container">
+                <!-- Logo se insertará dinámicamente -->
+            </div>
+
+            <div class="token-modal-grid">
+                <!-- Columna Izquierda: Gráfico -->
+                <div class="token-modal-left">
+                    <img src="esquemaa.png" alt="Gráfico de precios" class="token-chart-img">
+                    <div class="token-stats">
+                        <div class="token-stat-item">
+                            <span class="token-stat-label">Cadena</span>
+                            <span class="token-stat-value" id="token-chain">ETHEREUM</span>
+                        </div>
+                        <div class="token-stat-item">
+                            <span class="token-stat-label">Volumen en 1 D</span>
+                            <span class="token-stat-value" id="token-volume">76,1 MIL $</span>
+                        </div>
+                        <div class="token-stat-item">
+                            <span class="token-stat-label">Precio en 1 D</span>
+                            <span class="token-stat-value token-price-change" id="token-price-change">+70,7 %</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Información y Compra -->
+                <div class="token-modal-right">
+                    <div class="token-header">
+                        <h2 class="token-modal-title" id="token-modal-title">The Root Network</h2>
+                        <p class="token-modal-chain" id="token-modal-chain">Ethereum</p>
+                    </div>
+
+                    <!-- Opciones de Trading -->
+                    <div class="token-trade-options">
+                        <div class="token-trade-option">
+                            <div class="token-trade-label">Vender</div>
+                            <div class="token-trade-amount-container">
+                                <input type="text" class="token-trade-amount" value="0.12" id="token-amount-1">
+                                <select class="token-currency-select" id="token-currency-1">
+                                    <option value="ETH" selected>ETH</option>
+                                    <option value="USDT">USDT</option>
+                                    <option value="SOL">SOL</option>
+                                </select>
+                            </div>
+                            <div class="token-trade-usd" id="token-usd-1">150,8 US$</div>
+                        </div>
+
+                        <div class="token-trade-option">
+                            <div class="token-trade-label">Vender</div>
+                            <div class="token-trade-amount-container">
+                                <input type="text" class="token-trade-amount" value="0.06" id="token-amount-2">
+                                <select class="token-currency-select" id="token-currency-2">
+                                    <option value="RON" selected>RON</option>
+                                    <option value="ETH">ETH</option>
+                                    <option value="USDT">USDT</option>
+                                </select>
+                            </div>
+                            <div class="token-trade-usd" id="token-usd-2">150,8 US$</div>
+                        </div>
+
+                        <!-- Botón de Comprar -->
+                        <button class="token-buy-btn">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Compra de NFT -->
+    <div class="purchase-modal-overlay" id="purchase-modal" style="display: none;">
+        <div class="purchase-modal-content">
+            <button class="purchase-modal-close" id="purchase-modal-close">&times;</button>
+
+            <div class="purchase-modal-grid">
+                <!-- Columna Izquierda: Información del NFT -->
+                <div class="purchase-modal-left">
+                    <img src="imagen para trendy 3.png" alt="NFT" class="purchase-nft-image" id="purchase-nft-img">
+                    <h3 class="purchase-nft-title" id="purchase-nft-title">Memory un disguise</h3>
+                    <p class="purchase-nft-author">By <span id="purchase-nft-author">Aif4756</span></p>
+                    <p class="purchase-nft-offer">Top offer: <span id="purchase-nft-offer">1300 USD</span></p>
+                </div>
+
+                <!-- Columna Derecha: Formulario de Pago -->
+                <div class="purchase-modal-right">
+                    <!-- Container Superior: Métodos de Pago -->
+                    <div class="payment-section-top">
+                        <!-- Métodos de Pago -->
+                        <div class="payment-methods">
+                            <div class="payment-method-option">
+                                <label for="wallet-virtual">
+                                    <span class="payment-icon">🦊</span>
+                                    <span class="payment-text">Wallet virtual</span>
+                                </label>
+                                <input type="radio" id="wallet-virtual" name="payment-method" checked>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Container Inferior: Formulario y Pago -->
+                    <div class="payment-section-bottom">
+                        <!-- Iconos de Tarjetas -->
+                        <div class="card-icons">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/200px-Visa_Inc._logo.svg.png"
+                                alt="Visa" class="card-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/200px-Mastercard-logo.svg.png"
+                                alt="Mastercard" class="card-icon">
+                        </div>
+
+                        <!-- Formulario de Tarjeta -->
+                        <form class="payment-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Nombre del titular" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Número de la tarjeta" class="form-input" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Fecha de vencimiento" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Código de seguridad" class="form-input" required>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Total y Botón de Pago -->
+                        <div class="payment-footer">
+                            <div class="payment-total">
+                                <span class="total-amount" id="purchase-total">1303,84 USD</span>
+                            </div>
+                            <button class="payment-btn">PAGAR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sistema de Tutorial -->
+    <div id="tutorial-overlay" class="tutorial-overlay hidden">
+        <div id="tutorial-spotlight" class="tutorial-spotlight"></div>
+        <div id="tutorial-tooltip" class="tutorial-tooltip">
+            <h3 class="tutorial-tooltip-title"></h3>
+            <p class="tutorial-tooltip-text"></p>
+            <button id="tutorial-close" class="tutorial-close-btn">✕</button>
+        </div>
+        <button id="tutorial-next" class="tutorial-next-btn">
+            <img src="flecha morada.png" alt="Siguiente" class="tutorial-arrow">
+        </button>
+        <div class="tutorial-skip">
+            <button id="tutorial-skip">Saltar tutorial</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

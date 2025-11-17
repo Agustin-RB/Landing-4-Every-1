@@ -1,0 +1,31 @@
+{
+  "name": "the-momentum-nft-marketplace",
+  "version": "1.0.0",
+  "description": "Plataforma moderna de venta y gestión de NFTs y tokens cripto - Proyecto de Tesis",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -o",
+    "dev": "npx live-server --port=8000 --host=localhost",
+    "preview": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "nft",
+    "marketplace",
+    "crypto",
+    "blockchain",
+    "ethereum",
+    "web3",
+    "tokens",
+    "digital-art"
+  ],
+  "author": "Agustin Ruiz Bobatto",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/nft-marketplace.git"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
+
+
